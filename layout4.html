@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Modified Layout</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "poppins",sans-serif;
+    }
+
+    #maindiv {
+      width: 80%;
+      margin: auto;
+    }
+
+    #parent {
+      display: flex;
+      width: 100%;
+      margin-top: 10px;
+      gap: 10px;
+    }
+
+    #logodiv, #navdiv {
+      background-color: lightgray;
+      padding: 5px 20px;
+      min-height: 30px;
+      line-height: 30px;
+    }
+
+    #logodiv {
+      width: 50%;
+    }
+
+    #navdiv {
+      width: 50%;
+      text-align: right;
+    }
+
+    
+    #headerdiv {
+      width: 100%;
+      background-color: lightgray;
+      min-height: 80px;
+      line-height: 80px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    
+    #gridarea {
+      padding: 20px 0;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      width: 100%;
+    }
+
+    #smallbox {
+      background: #ccc;
+      height: 70px;
+    }
+
+    
+    #bottomboxes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    #box {
+      background: #ccc;
+      height: 300px;
+      text-align: center;
+      line-height: 300px;
+      font-size: 20px;
+    }
+
+
+    #footer {
+      width: 100%;
+      background-color: lightgray;
+      min-height: 40px;
+      line-height: 40px;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 20px;
+      
+    }
+
+
+    .btn {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: blue;
+  color: white;
+  padding: 10px 20px;
+   transition:background 2s ease , transform 2s ease;
+   text-align :center;
+}
+ 
+.btn:hover {
+  background: rgb(226, 49, 79);
+ transform: skewY(50deg);
+} 
+
+
+  </style>
+</head>
+
+<body>
+  <div id="maindiv">
+
+   
+    <div id="parent">
+      <div id="logodiv">Logo</div>
+      <div id="navdiv">Navigation</div>
+    </div>
+
+    <div id="headerdiv">Header / Banner</div>
+    <div id="headerdiv">Intro Text Area</div>
+
+   
+    <div id="gridarea">
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+      <div id="smallbox"></div>
+    </div>
+
+  
+    <div id="bottomboxes">
+      <div id="box">Box 1</div>
+      <div id="box">Box 2</div>
+      <div id="box">Box 3</div>
+    </div>
+
+    
+    <div id="footer">Footer</div>
+    <button class="btn">Hover Me !</button>
+  </div>
+</body>
+</html>

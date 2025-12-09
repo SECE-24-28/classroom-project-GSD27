@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Layout Template</title>
+
+    <style>
+      * {
+        margin: 0px;
+        box-sizing: border-box;
+        padding: 0px;
+       font-family: "French Script MT", cursive;
+      }
+      #parent {
+        display:flex;
+        width:100%;
+        min-height:30px;
+        margin-top:10px;
+
+      }
+      #logodiv {
+        width: 100%;
+        background-color: lightgray;
+        min-height: 30px;
+        line-height: 30px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        
+      }
+
+      
+      #navdiv {
+        width: 100%;
+        background-color: lightgray;
+        min-height: 30px;
+        line-height:20px;
+        padding-right: 10px;
+        text-align: right;
+        margin-bottom:10px;
+      }
+
+      #headerdiv {
+        width: 100%;
+        background-color: lightgray;
+        min-height: 80px;
+        line-height: 80px;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      #parent {
+        display: flex;
+        width: 100%;
+        min-height: 50px;
+        margin-top: 10px;
+        justify-content: space-between;
+      }
+      #sideiv {
+        width: 30%;
+        background-color: lightgray;
+        min-height: 50px;
+        text-align: center;
+        line-height: 200px;
+      }
+
+       /* #bodyarea { 
+        width: 65%;
+        background-color: lightgray;
+        min-height: 400px;
+        text-align: center;
+        line-height: 400px;
+      }*/
+
+      #footer {
+        width: 100%;
+        background-color: lightgrey;
+        min-height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      #maindiv {
+        width: 80%;
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="maindiv">
+      <div id="parent">
+      <div id="logodiv">Logo</div>
+      <div id="navdiv">Navigation</div>
+      </div>
+      <div id="headerdiv">Header / Banner</div>
+       <div id="headerdiv">Into Text Area</div>
+      <div id="parent">
+        <div id="sideiv">Box 1</div>
+        <div id="sideiv">Box 2</div>
+        <div id="sideiv">Box 3</div>
+      </div>
+      <div id="footer">Footer</div>
+    </div>
+  </body>
+</html>
+
+
+
+

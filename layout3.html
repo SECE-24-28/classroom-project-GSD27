@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Modified Layout</title>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #maindiv {
+    width: 80%;
+    margin: auto;
+  }
+
+  /* Logo */
+  #logodiv {
+    width: 100%;
+    background-color: lightgray;
+    min-height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+
+  /* Top Row (Sidebar + Header Banner) */
+  #toprow {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  #side {
+    width: 30%;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+  }
+
+  #headerdiv {
+    width: 70%;
+    background-color: lightgray;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+
+  /* Content Row (Navigation + Body Area) */
+  #contentrow {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  #sidediv {
+    width: 30%;
+    background-color: white;
+    min-height: 550px;
+  }
+
+  #bodyarea {
+    width: 70%;
+    background-color: lightgray;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+
+  /* Footer */
+  #footer {
+    width: 100%;
+    background-color: lightgray;
+    min-height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+</style>
+</head>
+
+<body style="background-color: white;">
+
+  <div id="maindiv">
+
+    <div id="logodiv">Logo</div>
+
+    <div id="toprow">
+      <div id="side"><b>SideBar Navigation</b></div>
+      <div id="headerdiv"><b>Header / Banner</b></div>
+    </div>
+
+    <div id="contentrow">
+      <div id="sidediv"></div>
+      <div id="bodyarea"><b>Body Area</b></div>
+    </div>
+
+    <div id="footer">Footer</div>
+
+  </div>
+
+</body>
+</html>
