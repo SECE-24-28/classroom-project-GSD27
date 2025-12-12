@@ -1,0 +1,15 @@
+npm init -y -> backend creation command
+
+npm i express mongoose dotenv
+npm install nodemon
+
+
+folders
+---------
+config
+controllers
+models
+routes
+
+.env
+server.js	

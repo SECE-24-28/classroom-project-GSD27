@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Mongo DB</h1>
+    <h1>{{message}}</h1>
+      <h2>Create the data</h2>
+      <form action="/store_book" method="post">
+      
+         Title:
+         <input type="text" name="title1"><br><br>
+         Author:
+         
+         <input type="text" name="author1"><br><br>
+         <input type="submit" value="insert">
+
+      </form>
+    <ul>
+        {{#each mydata}}
+        <li>
+            {{this.title}}-{{this.author}}
+            <a href="/edit/{{this._id}}">Edit</a>
+            <a href="/delete/{{this._id}}" onclick="return confirm('Are you sure?')">Delete</a>
+            </li>
+        {{/each}}
+
+    </ul>
+
+</body>
+</html>
+
